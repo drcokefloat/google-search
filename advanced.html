@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Search</title>
+    <style>
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type="text"] {
+        width: 400px;
+        margin-top: 5px;
+      }
+      input[type="submit"] {
+        background-color: #4285F4;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      .links {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="links">
+      <a href="index.html">Back to Search</a>
+    </div>
+    <form action="https://www.google.com/search">
+      <label>All these words:
+        <input type="text" name="as_q">
+      </label>
+      <label>This exact word or phrase:
+        <input type="text" name="as_epq">
+      </label>
+      <label>Any of these words:
+        <input type="text" name="as_oq">
+      </label>
+      <label>None of these words:
+        <input type="text" name="as_eq">
+      </label>
+      <input type="submit" value="Advanced Search">
+    </form>
+  </body>
+</html>
